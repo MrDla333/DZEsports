@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DZESPORTS — Players Above All</title>
+  <meta name="description" content="Algeria's Premier Esports Organization — Building an Esport Ecosystem where players come first.">
+
+  <!-- Open Graph / Twitter Card -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DZESPORTS — Players Above All">
+  <meta property="og:description" content="Algeria's Premier Esports Organization — Building an Esport Ecosystem where players come first.">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DZESPORTS — Players Above All">
+  <meta name="twitter:description" content="Algeria's Premier Esports Organization — Building an Esport Ecosystem where players come first.">
+  <meta name="twitter:image" content="">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;600;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── PAGE LOADER ── -->
+  <div id="pageLoader">
+    <div class="loader-brand">DZESPORTS</div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    <div class="loader-sub">LOADING</div>
+  </div>
+
+  <!-- ── BACK TO TOP ── -->
+  <button id="backToTop" title="Back to top">↑</button>
+
+  <!-- ── NAV ── -->
+  <nav id="mainNav">
+    <a href="#home" class="nav-logo">
+      <img data-logo="main" alt="DZESPORTS Logo">
+      <span id="navBrandName"></span>
+    </a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#games">Games</a>
+      <a href="#tournaments">Tournaments</a>
+      <a href="#champions">Hall of Fame</a>
+      <a href="#news">News</a>
+      <a href="#media">Media</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="#" data-social="discord">JOIN DISCORD</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="home">
+    <canvas id="heroParticles"></canvas>
+    <div class="hero-bg"></div>
+    <div class="hero-grid-lines"></div>
+    <div class="hero-scanline"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow" id="heroEyebrow"></div>
+      <h1 class="hero-title" id="heroTitle"></h1>
+      <div class="hero-tagline" id="heroTagline"></div>
+      <p class="hero-desc" id="heroDesc"></p>
+      <div class="hero-ctas">
+        <a href="#tournaments" class="btn-primary">VIEW TOURNAMENTS</a>
+        <a href="#" data-social="discord" class="btn-secondary">JOIN DISCORD</a>
+      </div>
+      <div class="hero-stats" id="heroStats"></div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-logo-wrap">
+        <img data-logo="main" class="hero-logo-img" alt="DZESPORTS">
+        <div class="hero-logo-ring"></div>
+        <div class="hero-logo-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ── GAMES ── -->
+  <section id="games">
+    <div class="section-header reveal">
+      <span class="section-tag">SUPPORTED TITLES</span>
+      <h2 class="section-title">5 Games. One Platform.</h2>
+      <p class="section-sub">Competing across Algeria's most popular esports titles with broadcast-quality production.</p>
+    </div>
+    <div class="games-grid">
+      <div class="game-card reveal" data-game="valorant" style="--game-color:var(--val)">
+        <div class="game-card-accent"></div>
+        <img data-logo="valorant" class="game-card-logo" alt="Valorant">
+        <div class="game-card-name">Valorant</div>
+        <div class="game-card-genre">5v5 Tactical Shooter</div>
+      </div>
+      <div class="game-card reveal" data-game="lol" style="--game-color:var(--lol)">
+        <div class="game-card-accent"></div>
+        <img data-logo="lol" class="game-card-logo" alt="League of Legends">
+        <div class="game-card-name">League of Legends</div>
+        <div class="game-card-genre">5v5 MOBA</div>
+      </div>
+      <div class="game-card reveal" data-game="rocketleague" style="--game-color:var(--rl)">
+        <div class="game-card-accent"></div>
+        <img data-logo="rocketleague" class="game-card-logo" alt="Rocket League">
+        <div class="game-card-name">Rocket League</div>
+        <div class="game-card-genre">3v3 Vehicular Soccer</div>
+      </div>
+      <div class="game-card reveal" data-game="r6" style="--game-color:var(--r6)">
+        <div class="game-card-accent"></div>
+        <img data-logo="r6" class="game-card-logo" alt="Rainbow Six Siege">
+        <div class="game-card-name">Rainbow Six</div>
+        <div class="game-card-genre">5v5 Tactical FPS</div>
+      </div>
+      <div class="game-card reveal" data-game="cs2" style="--game-color:var(--cs)">
+        <div class="game-card-accent"></div>
+        <img data-logo="cs2" class="game-card-logo" alt="CS2">
+        <div class="game-card-name">CS2</div>
+        <div class="game-card-genre">5v5 FPS Classic</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ── PARTNERS ── -->
+  <section id="partners">
+    <div id="partnersContainer"></div>
+  </section>
+
+  <!-- ── TOURNAMENTS ── -->
+  <section id="tournaments">
+    <div class="section-header reveal">
+      <span class="section-tag">COMPETITIVE EVENTS</span>
+      <h2 class="section-title">Tournaments</h2>
+      <p class="section-sub">Register, compete, and claim your championship across all five titles.</p>
+    </div>
+    <div class="tour-filter">
+      <button class="filter-btn active" data-filter="all">All Games</button>
+      <button class="filter-btn" data-filter="valorant">Valorant</button>
+      <button class="filter-btn" data-filter="lol">LoL</button>
+      <button class="filter-btn" data-filter="rocketleague">Rocket League</button>
+      <button class="filter-btn" data-filter="r6">Rainbow Six</button>
+      <button class="filter-btn" data-filter="cs2">CS2</button>
+    </div>
+    <div id="tourGrid"></div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ── CHAMPIONS ── -->
+  <section id="champions">
+    <div class="section-header reveal">
+      <span class="section-tag">HALL OF FAME</span>
+      <h2 class="section-title">Champions</h2>
+      <p class="section-sub">The players and teams who rose above. Algeria's finest competitors.</p>
+    </div>
+    <div id="championsGrid"></div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ── NEWS ── -->
+  <section id="news">
+    <div class="section-header reveal">
+      <span class="section-tag">LATEST UPDATES</span>
+      <h2 class="section-title">News &amp; Announcements</h2>
+      <p class="section-sub">Stay up to date with tournament announcements, results, and community news.</p>
+    </div>
+    <div id="newsGrid"></div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ── MEDIA ── -->
+  <section id="media">
+    <div class="section-header reveal">
+      <span class="section-tag">GALLERY</span>
+      <h2 class="section-title">Media</h2>
+      <p class="section-sub">Highlights, posters, and moments from our events.</p>
+    </div>
+    <div id="mediaGrid"></div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-logo-wrap">
+          <div class="about-hex"></div>
+          <div class="about-hex2"></div>
+          <img data-logo="main" alt="DZESPORTS">
+        </div>
+      </div>
+      <div class="about-text-col reveal">
+        <span class="about-tag">WHO WE ARE</span>
+        <h2 class="about-title">Algeria's Premier<br>Esports Platform</h2>
+        <p class="about-text" id="aboutText"></p>
+        <div class="about-facts">
+          <div class="about-fact">
+            <span class="about-fact-label">Founded</span>
+            <span class="about-fact-value" id="aboutFounded"></span>
+          </div>
+          <div class="about-fact">
+            <span class="about-fact-label">Country</span>
+            <span class="about-fact-value" id="aboutCountry"></span>
+          </div>
+          <div class="about-fact">
+            <span class="about-fact-label">Tagline</span>
+            <span class="about-fact-value" id="aboutTagline"></span>
+          </div>
+          <div class="about-fact">
+            <span class="about-fact-label">Games</span>
+            <span class="about-fact-value">5 Titles</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ── COMMUNITY ── -->
+  <section id="community">
+    <div class="community-grid">
+      <div class="community-text reveal">
+        <span class="section-tag">JOIN US</span>
+        <h2 class="section-title">Be Part of the Movement</h2>
+        <p class="community-desc">Connect with players, follow tournaments live, get match alerts, and be part of Algeria's fastest-growing esports community on Discord.</p>
+        <div class="community-perks">
+          <div class="perk-item">
+            <span class="perk-icon">🏆</span>
+            <div class="perk-text"><strong>Tournament Updates</strong>Brackets, schedules, and results in real time.</div>
+          </div>
+          <div class="perk-item">
+            <span class="perk-icon">🎮</span>
+            <div class="perk-text"><strong>Find Your Team</strong>LFT and LFP channels for all 5 titles.</div>
+          </div>
+          <div class="perk-item">
+            <span class="perk-icon">📡</span>
+            <div class="perk-text"><strong>Live Commentary</strong>Match streams and VODs posted every event.</div>
+          </div>
+        </div>
+      </div>
+      <div id="discordWidgetContainer" class="reveal"></div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <span class="section-tag">REACH OUT</span>
+      <h2 class="section-title">Contact &amp; Socials</h2>
+      <p class="section-sub">Follow us, DM us, or send a message. We're always around.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="social-cards" id="socialCards">
+          <a href="#" data-social="discord" class="social-card" style="--social-color:#5865f2">
+            <span class="social-icon"></span>
+            <div><div class="social-card-name">Discord</div><div class="social-card-label">Join our server</div></div>
+          </a>
+          <a href="#" data-social="twitter" class="social-card" style="--social-color:#1da1f2">
+            <span class="social-icon"></span>
+            <div><div class="social-card-name">Twitter / X</div><div class="social-card-label">Follow updates</div></div>
+          </a>
+          <a href="#" data-social="twitch" class="social-card" style="--social-color:#9147ff">
+            <span class="social-icon"></span>
+            <div><div class="social-card-name">Twitch</div><div class="social-card-label">Watch live</div></div>
+          </a>
+          <a href="#" data-social="youtube" class="social-card" style="--social-color:#ff0000">
+            <span class="social-icon"></span>
+            <div><div class="social-card-name">YouTube</div><div class="social-card-label">VODs & highlights</div></div>
+          </a>
+          <a href="#" data-social="instagram" class="social-card" style="--social-color:#e1306c">
+            <span class="social-icon"></span>
+            <div><div class="social-card-name">Instagram</div><div class="social-card-label">Behind the scenes</div></div>
+          </a>
+          <a href="#" data-social="email" class="social-card" style="--social-color:#00f5d4">
+            <span class="social-icon"></span>
+            <div><div class="social-card-name">Email</div><div class="social-card-label">Get in touch</div></div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <div class="contact-form-title">SEND A MESSAGE</div>
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label class="form-label">Name</label>
+            <input type="text" name="name" class="form-input" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" name="email" class="form-input" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Subject</label>
+            <input type="text" name="subject" class="form-input" placeholder="e.g. Tournament inquiry, Partnership...">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea name="message" class="form-input" rows="4" placeholder="Your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center">SEND MESSAGE</button>
+          <div id="formSuccess" class="form-success">✓ Message received — we'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img data-logo="main" alt="DZESPORTS Logo">
+        <div class="footer-brand-name" id="footerBrandName"></div>
+        <p class="footer-brand-desc" id="footerBrandDesc"></p>
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <span class="footer-newsletter-label">GET NOTIFIED</span>
+          <form id="newsletterForm">
+            <div class="newsletter-row">
+              <input type="email" class="newsletter-input" placeholder="your@email.com" required>
+              <button type="submit" class="newsletter-btn">NOTIFY ME</button>
+            </div>
+          </form>
+          <div class="newsletter-success" id="newsletterMsg">✓ You're on the list</div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">NAVIGATE</div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#games">Games</a>
+          <a href="#tournaments">Tournaments</a>
+          <a href="#champions">Hall of Fame</a>
+          <a href="#news">News</a>
+          <a href="#media">Media</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">SOCIALS</div>
+        <div class="footer-links">
+          <a href="#" data-social="discord">Discord</a>
+          <a href="#" data-social="twitter">Twitter / X</a>
+          <a href="#" data-social="twitch">Twitch</a>
+          <a href="#" data-social="youtube">YouTube</a>
+          <a href="#" data-social="instagram">Instagram</a>
+          <a href="#" data-social="email">Email</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">TITLES</div>
+        <div class="footer-game-logos">
+          <a href="#tournaments"><img data-logo="valorant" class="footer-game-logo" alt="Valorant"></a>
+          <a href="#tournaments"><img data-logo="lol" class="footer-game-logo" alt="LoL"></a>
+          <a href="#tournaments"><img data-logo="rocketleague" class="footer-game-logo" alt="Rocket League"></a>
+          <a href="#tournaments"><img data-logo="r6" class="footer-game-logo" alt="R6"></a>
+          <a href="#tournaments"><img data-logo="cs2" class="footer-game-logo" alt="CS2"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy" id="footerCopy"></div>
+      <div class="footer-tagline" id="footerTagline"></div>
+    </div>
+  </footer>
+
+  <!-- ── MOBILE NAV OVERLAY ── -->
+  <div id="mobileNavOverlay">
+    <a href="#home">Home</a>
+    <a href="#games">Games</a>
+    <a href="#tournaments">Tournaments</a>
+    <a href="#champions">Hall of Fame</a>
+    <a href="#news">News</a>
+    <a href="#media">Media</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#" data-social="discord" class="mobile-discord-link">Join Discord</a>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
