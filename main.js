@@ -51,7 +51,7 @@ const CONFIG = {
     "games": "5",
     "tournaments": "9+",
     "players": "400+",
-    "community": "1200"
+    "community": "1300"
   },
   "media": [
     {
